@@ -1,0 +1,42 @@
+@import "nib"
+
+html, body
+  background brown
+  height 100%
+  margin 0
+  padding 0
+
+// start reusable stuff ---------------------
+flex()
+  display flex
+  justify-content center
+  align-items center
+
+fade()
+  -webkit-transition .25s
+  transition .25s
+// end reusable ------------------------------
+
+.flex-container
+  flex()
+  height 100%
+
+.link
+  flex()
+  fade()
+  text-decoration none
+  color white
+  font-size 50px
+  background-color rgba(192,192,192,.7)
+
+  border-radius 50%
+  height 80px
+  width 80px
+
+  margin-left 40px
+  margin-right 40px
+
+.link:hover
+  fade()
+  background-color rgba(192,192,192,1)
+  color black
